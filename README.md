@@ -41,6 +41,6 @@
 
 ## Authors
 
-<a href="http://taixiaoyu.com/" target="_blank">Xiaoyu Tai</a>
-<a href="https://jennyhottle.com/" target="_blank">Jenny Hottle</a>
+<a href="http://taixiaoyu.com/" target="_blank">Xiaoyu Tai</a> <br>
+<a href="https://jennyhottle.com/" target="_blank">Jenny Hottle</a> <br>
 <a href="http://www.boneyeldho.com/" target="_blank">Boney Yeldho</a>
