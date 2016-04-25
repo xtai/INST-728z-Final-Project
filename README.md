@@ -27,6 +27,8 @@
 |       |   |-- gradebook-edit-confirm-1.html
 |       |   \-- gradebook-xxxxx.html
 |       |-- connet.html (Connet)
+|       |   |-- connet-message-1.html
+|       |   |-- connet-compose.html
 |       |   \-- connet-xxxxx.html
 |       \-- material.html (Material)
 |           \-- material-xxxxx.html

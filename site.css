@@ -33,3 +33,6 @@ body {
 .nav.nav-tabs > li > a {
     line-height: 24px;
 }
+.main-table-clickable {
+    cursor: pointer;
+}
