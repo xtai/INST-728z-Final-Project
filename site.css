@@ -1,5 +1,35 @@
-/* INST 728z project */
+/*
+ * INST 728z project
+ * Stylesheet
+ */
 
+
+/* Global */
 body {
-    padding-top: 20px;
+    padding-top: 80px;
+}
+
+/* Main Left */
+.affix-top {
+    width: 262.5px;
+}
+.affix {
+    width: 262.5px;
+}
+
+/* Main Right */
+.main-right-content {
+    min-height: 500px
+}
+.main-h1-title {
+    margin-top: 0px;
+}
+.main-p-subtitle {
+    font-size: 24px;
+}
+.main-p-subsubtitle {
+    font-size: 20px;
+}
+.nav.nav-tabs > li > a {
+    line-height: 24px;
 }
