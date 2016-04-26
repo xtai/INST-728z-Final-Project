@@ -8,6 +8,15 @@
 body {
     padding-top: 80px;
 }
+button.close {
+    color: #95a5a6;
+}
+button.close:hover,
+button.close:active,
+button.close:focus,
+button.close:visited {
+    color: #798d8f;
+}
 
 /* Main Left */
 .affix-top {
@@ -37,8 +46,8 @@ body {
     cursor: pointer;
 }
 .panel-heading-message {
-    height: 50px;
+    height: 56px;
 }
 .panel-heading-message h3 {
-    margin-top: 5px;
+    margin-top: 8px;
 }
