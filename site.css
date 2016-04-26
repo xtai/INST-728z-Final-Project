@@ -36,3 +36,9 @@ body {
 .main-table-clickable {
     cursor: pointer;
 }
+.panel-heading-message {
+    height: 50px;
+}
+.panel-heading-message h3 {
+    margin-top: 5px;
+}
