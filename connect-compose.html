@@ -41,6 +41,94 @@
         </div>
       </nav>
 
+      <!-- Contact Modal -->
+      <div class="modal fade" id="composeContact" tabindex="-1" role="dialog" aria-labelledby="composeContactModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="composeContactModal">UMEI007 - 0101 Contact List</h4>
+            </div>
+            <div class="modal-body">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-warning" onclick="toggleall();">
+                  <input type="checkbox" autocomplete="off" id="students-all"> Select all students in <strong>UMEI 007 - 0101</strong>
+                </label>
+              </div>
+              <script type="text/javascript">
+              var toggleall = function(argument) {
+                if ($('#students-all').is(':checked')) {
+                  $('.students').prop('checked', false);
+                } else {
+                  $('.students').prop('checked', true);
+                }
+              }
+              </script>
+              <hr>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" class="students" value="">
+                  Brooks, Ida
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" class="students" value="">
+                  Gill, Marco
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" class="students" value="">
+                  Gill, Marco
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" class="students" value="">
+                  Gill, Marco
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" class="students" value="">
+                  Gill, Marco
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" class="students" value="">
+                  Gill, Marco
+                </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-warning" data-dismiss="modal">Add to Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Sent Successful Modal -->
+      <div class="modal fade" id="composeSent" tabindex="-1" role="dialog" aria-labelledby="composeSentModal">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="composeSentModal">Success!</h4>
+            </div>
+            <div class="modal-body">
+              <h1>Your message has been sent!</h1>
+            </div>
+            <div class="modal-footer">
+              <a href="./connect.html" class="btn btn-primary btn-block">Return to Inbox</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Main -->
       <main>
         <div class="row">
@@ -65,8 +153,8 @@
             <ul class="nav nav-tabs">
               <li role="presentation"><a href="./"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
               <li role="presentation"><a href="./course.html">UMEI 007 - 0101</a></li>
-              <li role="presentation"><a href="./conncet.html">Conversations</a></li>
-              <li role="presentation" class="active"><a href="#">Compose &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './conncet.html';"><span aria-hidden="true">&times;</span></button></a></li>
+              <li role="presentation"><a href="./connect.html">Conversations</a></li>
+              <li role="presentation" class="active"><a href="#">Compose &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './connect.html';"><span aria-hidden="true">&times;</span></button></a></li>
             </ul>
             <br>
             <!-- Tab panes -->
@@ -80,7 +168,7 @@
                 <div class="input-group">
                   <input type="text" class="form-control" id="composeTo" placeholder="Recipients">
                   <span class="input-group-btn">
-                    <button class="btn btn-warning" type="button">Contact</button>
+                    <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#composeContact">Contact</button>
                   </span>
                 </div>
                 <br>
@@ -92,14 +180,13 @@
                 <br>
                 <div class="btn-toolbar pull-right" role="toolbar" aria-label="...">
                   <div class="btn-group" role="group" aria-label="Save">
-                    <button type="button" class="btn btn-default">Save Draft</button>
+                    <a href="./connect.html" class="btn btn-default">Save Draft</a>
                   </div>
                   <div class="btn-group" role="group" aria-label="Send">
-                    <button type="button" class="btn btn-success">Send</button>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#composeSent">Send</a>
                   </div>
                 </div>
                 <button type="button" class="btn btn-warning">Attach File</button>
-                
               </div>
             </div>
           </div>

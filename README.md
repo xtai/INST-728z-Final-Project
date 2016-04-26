@@ -26,10 +26,10 @@
 |       |   |-- gradebook-edit-2.html
 |       |   |-- gradebook-edit-confirm-1.html
 |       |   \-- gradebook-xxxxx.html
-|       |-- conncet (conncet)
-|       |   |-- conncet-message-1.html
-|       |   |-- conncet-compose.html
-|       |   \-- conncet-xxxxx.html
+|       |-- connect (connect)
+|       |   |-- connect-message-1.html
+|       |   |-- connect-compose.html
+|       |   \-- connect-xxxxx.html
 |       \-- material.html (Material)
 |           \-- material-xxxxx.html
 \-- login.html (Logout -> this page)
