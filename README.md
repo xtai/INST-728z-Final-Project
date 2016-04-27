@@ -16,23 +16,30 @@
 ## Site Hierarchy
 
 ```
-.
-|-- index.html (Home)
-|   |-- settings.html (Settings)
-|   \-- course.html (UMEI 007)
-|       |-- gradebook.html (Gradebook)
-|       |   |-- gradebook-add.html
-|       |   |-- gradebook-edit-1.html
-|       |   |-- gradebook-edit-2.html
-|       |   |-- gradebook-edit-confirm-1.html
-|       |   \-- gradebook-xxxxx.html
-|       |-- connect (connect)
-|       |   |-- connect-message-1.html
-|       |   |-- connect-compose.html
-|       |   \-- connect-xxxxx.html
-|       \-- material.html (Material)
-|           \-- material-xxxxx.html
-\-- login.html (Logout -> this page)
+index.html
+|-- course.html
+|   |-- calendar.html
+|   |-- connect.html
+|   |   |-- connect-compose.html
+|   |   |-- connect-message-1.html
+|   |   |-- connect-message-2.html
+|   |   |-- connect-message-3.html
+|   |   |-- connect-message-4.html
+|   |   |-- connect-message-5.html
+|   |   |-- connect-message-6.html
+|   |   |-- connect-message-7.html
+|   |   |-- connect-message-8.html
+|   |   \-- connect-message-9.html
+|   |-- discussion.html
+|   |-- gradebook.html
+|   \-- material.html
+|       |-- material-add.html
+|       |-- material-added.html
+|       |-- material-file-1.html
+|       \-- material-send.html
+|-- course-2.html
+|-- course-3.html
+\-- previous-course.html
 ```
 
 
