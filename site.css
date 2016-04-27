@@ -79,3 +79,10 @@ button.close:visited {
     cursor: inherit;
     display: block;
 }
+/*Extra Styles*/
+.btn-spacer {
+    margin-right: 20px;
+}
+.btn-white{
+    background-color: #fff;
+}
