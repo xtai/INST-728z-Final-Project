@@ -16,12 +16,12 @@
 ## Site Hierarchy
 
 ```
-index.html
-|-- course.html
-|   |-- calendar.html
-|   |-- connect.html
-|   |   |-- connect-compose.html
-|   |   |-- connect-message-1.html
+index.html (Dashboard aka Home)
+|-- course.html (UMEI 007 - 0101)
+|   |-- calendar.html (Under Construction)
+|   |-- connect.html (Conversations)
+|   |   |-- connect-compose.html (Compose new message)
+|   |   |-- connect-message-1.html (Message 1)
 |   |   |-- connect-message-2.html
 |   |   |-- connect-message-3.html
 |   |   |-- connect-message-4.html
@@ -30,16 +30,16 @@ index.html
 |   |   |-- connect-message-7.html
 |   |   |-- connect-message-8.html
 |   |   \-- connect-message-9.html
-|   |-- discussion.html
+|   |-- discussion.html (Under Construction)
 |   |-- gradebook.html
-|   \-- material.html
-|       |-- material-add.html
-|       |-- material-added.html
-|       |-- material-file-1.html
-|       \-- material-send.html
-|-- course-2.html
-|-- course-3.html
-\-- previous-course.html
+|   \-- material.html (Course Materials)
+|       |-- material-add.html (Add a new file - pt.1)
+|       |-- material-added.html (Add a new file - pt.2)
+|       |-- material-file-1.html (View File 1)
+|       \-- material-send.html (Send File - Compose New Message with attachment)
+|-- course-2.html (UMEI 007 - 0201)
+|-- course-3.html (UMEI 008 - 0101)
+\-- previous-course.html (Under Construction)
 ```
 
 
