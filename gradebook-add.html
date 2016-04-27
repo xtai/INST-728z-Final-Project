@@ -65,77 +65,124 @@
             <ul class="nav nav-tabs">
               <li role="presentation"><a href="./"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
               <li role="presentation"><a href="./course.html">UMEI 007 - 0101</a></li>
-              <li role="presentation" class="active"><a href="#">Gradebook &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './course.html';"><span aria-hidden="true">&times;</span></button></a></li>
+              <li role="presentation"><a href="./gradebook.html">Gradebook</a></li>
+              <li role="presentation" class="active"><a href="#">Add Grades &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './gradebook.html';"><span aria-hidden="true">&times;</span></button></a></li>
             </ul>
             <br>
+            <!-- Modals -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Grades for your UMEI007 assignment "Name" have been saved.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onClick="location.href='./gradebook.html'" data-dismiss="modal">Return to Gradebook</button>
+      </div>
+    </div>
+  </div>
+</div><!---Modal ends-->
             <!-- Tab panes -->
             <div class="row">
               <div class="col-md-12">
                 <!--<h1 class="main-h1-title">Gradebook</h1>-->
-                <p class="main-p-subtitle">You are viewing the Gradebook for <strong>UMEI 007-0101</strong></p>
-                 <a href="./gradebook-add.html" class="btn-spacer btn btn-info">Add</a>
-                  <a href="#" class="btn-spacer btn btn-success">Edit</a>
-                  <a href="./gradebook-add.html" class="btn-spacer btn btn-warning">Calculate</a>
-                  <hr>
+                <p class="main-p-subtitle">You are adding grades for a new assignment in <strong>UMEI 007-0101</strong></p><br>
+                <div class="col-md-8">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Assignment Name</label>
+                            <div class="col-sm-8">
+                                <input class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Category</label>
+                            <div class="col-sm-8">
+                                <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Select
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Essays</a></li>
+    <li><a href="#">Discussions</a></li>
+    <li><a href="#">Homework</a></li>
+    <li><a href="#">Presentations</a></li>
+  </ul>
+</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Maximum Points</label>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="number">
+                            </div>
+                        </div>
+                    </form>
+                      
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="btn btn-info btn-block" data-toggle="modal" data-target="#myModal">Save Grades</a><br>
+                  <a href="#" class="btn-block btn btn-success">Publish Grades</a>
+                  <br>
+                </div>
               </div>
               <div class="col-md-12">
                   <table class="table table-bordered table-hover">
                   <thead>
                     <tr>
                       <th>Student Name </th>
-                      <th>Raw Source</th>
-                      <th>Calculate</th>
+                      <th>Points</th>
+                      <th>Comments</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-9.html';">
+                    <tr>
                       <td scope="row">Brooks, Ida</td>
-                      <td>92</td>
-                      <td>A</td>
+                      <td><input></td>
+                      <td><input></td>
                     </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-8.html';">
+                    <tr>
                       <td scope="row">Clayton, Michael</td>
-                      <td>88</td>
-                      <td>B+</td>
+                      <td><input></td>
+                      <td><input></td>
                     </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-7.html';">
+                    <tr>
                       <td scope="row">Elliot, Isabel</td>
-                      <td>97</td>
-                      <td>A+</td>
+                      <td><input></td>
+                      <td><input></td>
                     </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-1.html';">
+                    <tr>
                       <td scope="row">Gill, Marco</td>
-                      <td>94</td>
-                      <td>A</td>
+                      <td><input></td>
+                      <td><input></td>
                     </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-6.html';">
+                      <tr>
                       <td scope="row">Patton, Kyle</td>
-                      <td>84</td>
-                      <td>B</td>
+                      <td><input></td>
+                      <td><input></td>
                     </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-5.html';">
+                    <tr>
                       <td scope="row">Roberts, Sandra</td>
-                      <td>78</td>
-                      <td>C</td>
+                      <td><input></td>
+                      <td><input></td>
                     </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-4.html';">
+                    <tr>
                       <td scope="row">West, Felipe</td>
-                      <td>89</td>
-                      <td>B+</td>
+                      <td><input></td>
+                      <td><input></td>
                     </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-3.html';">
+                    <tr>
                       <td scope="row">Wu, Tina</td>
-                      <td>94</td>
-                      <td>A+</td>
-                    </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-2.html';">
-                      <td scope="row">Yetz, Lauren</td>
-                      <td>88</td>
-                      <td>B+</td>
+                      <td><input></td>
+                      <td><input></td>
                     </tr>
                   </tbody>
                 </table>
-            <p>Click on a student's name to view grade details</p>
+           <a href="#" class="btn-spacer btn btn-info">Add new students</a>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UMEI 007 - Re: Pages covered in class...</title>
+    <title>UMEI 007 - Upload Successful</title>
 
     <!-- Bootstrap CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
@@ -41,6 +41,25 @@
         </div>
       </nav>
 
+      <!-- Upload Successful Modal -->
+      <div class="modal fade" id="materialUploadSuccessful" tabindex="-1" role="dialog" aria-labelledby="materialUploadSuccessfulModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="materialUploadSuccessfulModal">Success!</h4>
+            </div>
+            <div class="modal-body">
+              <h2>You've added a file!</h2>
+            </div>
+            <div class="modal-footer">
+              <a href="./material.html" class="btn btn-default pull-left">Go to Course Materials</a>
+              <a href="./material-file-1.html" class="btn btn-success">Go to this File</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Main -->
       <main>
         <div class="row">
@@ -65,37 +84,40 @@
             <ul class="nav nav-tabs">
               <li role="presentation"><a href="./"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
               <li role="presentation"><a href="./course.html">UMEI 007 - 0101</a></li>
-              <li role="presentation"><a href="./connect.html"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> Conversations</a></li>
-              <li role="presentation" class="active"><a href="#">Essay 1 grade question &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './connect.html';"><span aria-hidden="true">&times;</span></button></a></li>
+              <li role="presentation"><a href="./material.html"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Course Materials</a></li>
+              <li role="presentation" class="active"><a href="#">Adding a new File &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './material.html';"><span aria-hidden="true">&times;</span></button></a></li>
             </ul>
             <br>
             <!-- Tab panes -->
             <div class="row">
               <div class="col-md-12">
+                <p class="main-p-subtitle">Upload Successful, please enter file title and save.</p>
                 <div class="panel panel-default">
                   <div class="panel-heading panel-heading-message">
                     <div class="btn-toolbar pull-right" role="toolbar" aria-label="reply or forward this message">
-                      <div class="btn-group" role="group" aria-label="reply this message">
-                        <a href="./connect-compose.html" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-arrow-left"></span> Reply</a>
-                      </div>
                       <div class="btn-group" role="group" aria-label="forward this message">
-                        <a href="./connect-compose.html" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-arrow-right"></span> Forward</a>
+                        <a href="./material-add.html" class="btn btn-sm btn-default panel-btns">Cancel</a>
+                      </div>
+                      <div class="btn-group" role="group" aria-label="reply this message">
+                        <button type="button" class="btn btn-sm btn-success panel-btns" data-toggle="modal" data-target="#materialUploadSuccessful">Save</button>
                       </div>
                     </div>
-                    <h3 class="panel-title">Essay 1 grade question</h3>
+                    <h3 class="panel-title">
+                      <form class="form-inline">
+                        <label class="sr-only" for="materialTitleInput">File Title</label>
+                        <input type="text" class="form-control material-title-input" value="" id="materialTitleInput" placeholder="File Title">
+                      </form>
+                    </h3>
                   </div>
                   <div class="panel-body">
-                    <p class="pull-right">March 17, 7:18 pm</p>
-                    <p>
-                      <strong>From:</strong> <a href="./connect-compose.html">West, Felipe</a><br>
-                      <strong>To:</strong> me</p>
+                    <p class="pull-right">April 28, 11:04 am</p>
+                    <p><strong>Uploaded by:</strong> me</p>
+                    <label class="sr-only" for="materialAddFileNotes"></label>
+                    <textarea class="form-control" placeholder="Notes" id="materialAddFileNotes"></textarea>
                     <hr>
-                    <p>Susan,</p>
-                    <p>I am having trouble finding my grade for essay 1. Have they been published??</p> 
-                    <p>- felipe</p>
+                    <embed src="http://applij.oxfordjournals.org/content/25/2/156.full.pdf" width="100%" height="600" type='application/pdf'>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UMEI 007 - Re: Pages covered in class...</title>
+    <title>UMEI 007 - Add a new File</title>
 
     <!-- Bootstrap CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
@@ -65,37 +65,33 @@
             <ul class="nav nav-tabs">
               <li role="presentation"><a href="./"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
               <li role="presentation"><a href="./course.html">UMEI 007 - 0101</a></li>
-              <li role="presentation"><a href="./connect.html"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> Conversations</a></li>
-              <li role="presentation" class="active"><a href="#">Essay 1 grade question &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './connect.html';"><span aria-hidden="true">&times;</span></button></a></li>
+              <li role="presentation"><a href="./material.html"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Course Materials</a></li>
+              <li role="presentation" class="active"><a href="#">Adding a new file &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './material.html';"><span aria-hidden="true">&times;</span></button></a></li>
             </ul>
             <br>
             <!-- Tab panes -->
             <div class="row">
               <div class="col-md-12">
-                <div class="panel panel-default">
-                  <div class="panel-heading panel-heading-message">
-                    <div class="btn-toolbar pull-right" role="toolbar" aria-label="reply or forward this message">
-                      <div class="btn-group" role="group" aria-label="reply this message">
-                        <a href="./connect-compose.html" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-arrow-left"></span> Reply</a>
-                      </div>
-                      <div class="btn-group" role="group" aria-label="forward this message">
-                        <a href="./connect-compose.html" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-arrow-right"></span> Forward</a>
-                      </div>
+                <p class="main-p-subtitle">You're adding a new file to <strong>UMEI 007 - 0101</strong></p>
+                <br>
+              </div>
+              <div class="col-md-offset-2 col-md-8">
+                <center>
+                  <div class="form-group">
+                    <label class="sr-only" for="materialChooseFile">File input</label>
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <span class="btn btn-success btn-file">
+                          Choose File <input type="file" id="materialChooseFile">
+                        </span>
+                      </span>
+                      <input type="text" class="form-control" readonly="" id="Chosen files feedback">
                     </div>
-                    <h3 class="panel-title">Essay 1 grade question</h3>
+                    <p class="help-block">You can choose a file from your computer</p>
                   </div>
-                  <div class="panel-body">
-                    <p class="pull-right">March 17, 7:18 pm</p>
-                    <p>
-                      <strong>From:</strong> <a href="./connect-compose.html">West, Felipe</a><br>
-                      <strong>To:</strong> me</p>
-                    <hr>
-                    <p>Susan,</p>
-                    <p>I am having trouble finding my grade for essay 1. Have they been published??</p> 
-                    <p>- felipe</p>
-                  </div>
-                </div>
-                
+                  <hr>
+                  <a href="./material-added.html" class="btn btn-lg btn-success">Upload</a>
+                </center>
               </div>
             </div>
           </div>
@@ -115,5 +111,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).on('change', '.btn-file :file', function() {
+        var input = $(this),
+          numFiles = input.get(0).files ? input.get(0).files.length : 1,
+          label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [numFiles, label]);
+      });
+      $(document).ready( function() {
+        $('.btn-file :file').on('fileselect', function(event, numFiles, label) {   
+          var input = $(this).parents('.input-group').find(':text'),
+            log = numFiles > 1 ? numFiles + ' files selected' : label;
+          if( input.length ) {
+            input.val(log);
+          } else {
+            if( log ) alert(log);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
