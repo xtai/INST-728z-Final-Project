@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UMEI 007 - Re: Pages covered in class...</title>
+    <title>UMEI 007 - Acdamic Writing.pdf</title>
 
     <!-- Bootstrap CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
@@ -41,6 +41,25 @@
         </div>
       </nav>
 
+      <!-- Delete Comfirmation Modal -->
+      <div class="modal fade" id="materialDelete" tabindex="-1" role="dialog" aria-labelledby="materialDeleteModal">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="materialDeleteModal">Deleting?</h4>
+            </div>
+            <div class="modal-body">
+              <h2>Do you want to delete this file?</h2>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <a href="./material.html" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Main -->
       <main>
         <div class="row">
@@ -65,8 +84,8 @@
             <ul class="nav nav-tabs">
               <li role="presentation"><a href="./"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
               <li role="presentation"><a href="./course.html">UMEI 007 - 0101</a></li>
-              <li role="presentation"><a href="./connect.html"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> Conversations</a></li>
-              <li role="presentation" class="active"><a href="#">Re: Essay 1 Grade &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './connect.html';"><span aria-hidden="true">&times;</span></button></a></li>
+              <li role="presentation"><a href="./material.html"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Course Materials</a></li>
+              <li role="presentation" class="active"><a href="#">Essay1.pdf &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './material.html';"><span aria-hidden="true">&times;</span></button></a></li>
             </ul>
             <br>
             <!-- Tab panes -->
@@ -76,48 +95,19 @@
                   <div class="panel-heading panel-heading-message">
                     <div class="btn-toolbar pull-right" role="toolbar" aria-label="reply or forward this message">
                       <div class="btn-group" role="group" aria-label="reply this message">
-                        <a href="./connect-compose.html" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-arrow-left"></span> Reply</a>
+                        <button type="button" class="btn btn-sm btn-danger panel-btns" data-toggle="modal" data-target="#materialDelete"><span class="glyphicon glyphicon-trash"></span> Delete</button>
                       </div>
                       <div class="btn-group" role="group" aria-label="forward this message">
-                        <a href="./connect-compose.html" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-arrow-right"></span> Forward</a>
+                        <a href="./material-send.html" class="btn btn-sm btn-default panel-btns"><span class="glyphicon glyphicon-send"></span> Send</a>
                       </div>
                     </div>
-                    <h3 class="panel-title">Re: Essay 1 Grade</h3>
+                    <h3 class="panel-title">Essay1.pdf</h3>
                   </div>
                   <div class="panel-body">
-                    <p class="pull-right">March 23, 9:23 am</p>
-                    <p>
-                      <strong>From:</strong> <a href="./connect-compose.html">Brooks, Ida</a><br>
-                      <strong>To:</strong> me</p>
+                    <p class="pull-right">Feb 2, 2:46 pm</p>
+                    <p><strong>Uploaded by:</strong> me</p>
                     <hr>
-                    <p>Susan,</p>
-                    <p>Thanks for posting grades! Did you add comments anywhere, or will we be reviewing them in class this week?</p>
-                    <p>Ida Brooks</p>
-                    <p>P.S. I will not be in class on April 12 because I have an internship interview. I can make up any class work as needed!</p>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading panel-heading-message">
-                    <div class="btn-toolbar pull-right" role="toolbar" aria-label="reply or forward this message">
-                      <div class="btn-group" role="group" aria-label="reply this message">
-                        <a href="./connect-compose.html" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-arrow-left"></span> Reply</a>
-                      </div>
-                      <div class="btn-group" role="group" aria-label="forward this message">
-                        <a href="./connect-compose.html" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-arrow-right"></span> Forward</a>
-                      </div>
-                    </div>
-                    <h3 class="panel-title">Essay 1 Grade</h3>
-                  </div>
-                  <div class="panel-body">
-                    <p class="pull-right">March 22, 7:00 am</p>
-                    <p>
-                      <strong>From:</strong> me<br>
-                      <strong>To:</strong> <a href="./connect-compose.html">UMEI 007 - 0101</a>
-                    </p>
-                    <hr>
-                    <p>Hi class,</p>
-                    <p>I've posted your grades for Essay 1. Please let me know if you have any questions.</p>
-                    <p>Susan</p>
+                    <embed src="http://applij.oxfordjournals.org/content/25/2/156.full.pdf" width="100%" height="600" type='application/pdf'>
                   </div>
                 </div>
               </div>
