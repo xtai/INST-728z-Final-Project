@@ -70,6 +70,7 @@
             </ul>
             <br>
             <!-- Modals -->
+						<!--- Modal1---->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -84,7 +85,24 @@
       </div>
     </div>
   </div>
-</div><!---Modal ends-->
+</div><!---Modal1 ends-->
+						<!--- Modal2---->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>Grades for your UMEI007 assignment "Name" have been published.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onClick="location.href='./gradebook.html'" data-dismiss="modal">Return to Gradebook</button>
+      </div>
+    </div>
+  </div>
+</div><!---Modal2 ends-->
+						<!---Modals end-->
             <!-- Tab panes -->
             <div class="row">
               <div class="col-md-12">
@@ -126,8 +144,8 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="btn btn-info btn-block" data-toggle="modal" data-target="#myModal">Save Grades</a><br>
-                  <a href="#" class="btn-block btn btn-success">Publish Grades</a>
-                  <br>
+                  <a href="#" class="btn-block btn btn-success" data-toggle="modal" data-target="#myModal2">Publish Grades</a>
+                  <br> 
                 </div>
               </div>
               <div class="col-md-12">
