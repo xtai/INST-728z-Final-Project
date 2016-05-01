@@ -17,6 +17,9 @@ button.close:focus,
 button.close:visited {
     color: #798d8f;
 }
+.btn-icon {
+    font-size: 40pt;
+}
 
 /* Main Left */
 .affix-top {
