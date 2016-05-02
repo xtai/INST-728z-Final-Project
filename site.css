@@ -7,6 +7,7 @@
 /* Global */
 body {
     padding-top: 80px;
+    background: #F6F6F6;
 }
 button.close {
     color: #95a5a6;
@@ -19,6 +20,84 @@ button.close:visited {
 }
 .btn-icon {
     font-size: 40pt;
+}
+
+/* Project: Less-Bootstrap */
+.left-list-group > .list-group-item.active {
+    margin-left: 0px;
+    border-radius: 0;
+    color: #18bc9c;
+    background-color: #FFF;
+    border-left-width: 15px;
+    border-left-color: #18bc9c;
+}
+.left-list-group > .list-group-item.active > span.badge {
+    border-radius: 2px;
+    background-color: #EEE;
+    border-color: #18bc9c;
+    color: #18bc9c;
+}
+.left-list-group > .list-group-item.active:hover > span.badge,
+.left-list-group > .list-group-item.active:focus > span.badge {
+    color: #149c82;
+}
+.left-list-group > .list-group-item {
+    border-radius: 0;
+    border-width: 0px;
+    background-color: #FFF;
+}
+.left-list-group > .list-group-item:hover,
+.left-list-group > .list-group-item:focus {
+    border-radius: 0;
+    border-width: 0px;
+    background-color: #DDD;
+}
+.left-list-group > .list-group-item.active:hover,
+.left-list-group > .list-group-item.active:focus {
+    border-left-color: #149c82;
+    color: #149c82;
+    background-color: #DDD;
+    border-left-width: 15px;
+}
+.left-list-group > .list-group-item > span.badge {
+    border-radius: 2px;
+    background-color: #18bc9c;
+}
+.right-tab-panel {
+    padding-top: 10px;
+    z-index:500;
+    padding-bottom: 20px;
+    background-color: #FFF;
+    border: solid 1px #DDD;
+    position: relative;
+}
+ul.nav-tabs > li > a{
+    background-color: #EEE;
+    border: solid 1px #DDD;
+    border-bottom-width: 1px;
+    border-radius: 0px;
+    margin-bottom: -1px;
+}
+ul.nav-tabs > li > a:hover,
+ul.nav-tabs > li > a:focus {
+    background-color: #DDD;
+    border-color: #DDD;
+}
+ul.nav-tabs > li.active > a{
+    background-color: #FFF;
+    border: solid 1px #DDD;
+    border-bottom-width: 0px;
+    border-radius: 0px;
+    z-index: 883;
+}
+ul.nav-tabs > li.active > a:hover,
+ul.nav-tabs > li.active > a:focus {
+    background-color: #FFF;
+    border-bottom-width: 0px;
+    border-color: #DDD;
+}
+ul.nav-tabs {
+    border-bottom: 0px;
 }
 
 /* Main Left */
