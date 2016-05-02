@@ -89,3 +89,25 @@ button.close:visited {
 .btn-white{
     background-color: #fff;
 }
+
+/* Gradebook */
+#profile {
+    text-align: center;
+}
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-left: 20%;
+    border: 2px solid #ecf0f1;
+}
+
+.img-circle-small {
+    border-radius: 50%;
+    max-width: 30px;
+    border: 2px solid #ecf0f1;
+}
+
+.img-circle-small:hover {
+    max-width: 75px;
+}
