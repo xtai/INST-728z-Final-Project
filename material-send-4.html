@@ -171,8 +171,8 @@
             <ul class="nav nav-tabs">
               <li role="presentation"><a href="./index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
               <li role="presentation"><a href="./course.html">UMEI 007 - 0101</a></li>
-              <li role="presentation"><a href="./connect.html"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> Conversations</a></li>
-              <li role="presentation" class="active"><a href="#">Compose &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './connect.html';"><span aria-hidden="true">&times;</span></button></a></li>
+              <li role="presentation"><a href="./material.html"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Course Materials</a></li>
+              <li role="presentation" class="active"><a href="#">Compose &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './material.html';"><span aria-hidden="true">&times;</span></button></a></li>
             </ul>
                         <!-- Tab panes -->
             <div class="row right-tab-panel">
@@ -192,8 +192,15 @@
                 <label for="composeSubject">Subject</label>
                 <input type="text" class="form-control" id="composeSubject" placeholder="Subject">
                 <br>
-                <label for="composeSubject">Message</label>
-                <textarea class="form-control" rows="6"></textarea>
+                <label for="composeAttachment">Attachments</label>
+                <div class="panel panel-default" id="composeAttachment">
+                  <div class="panel-body">
+                    <a href="./material-file-4.html"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Essay-Rubric.pdf</button></a>
+                    <button type="button" class="close" aria-label="Close" onclick="window.location.href = './connect-compose.html';"><span aria-hidden="true">&times;</span>
+                  </div>
+                </div>
+                <label for="composeMessage">Message</label>
+                <textarea class="form-control" rows="6" id="composeMessage"></textarea>
                 <br>
                 <div class="btn-toolbar pull-right" role="toolbar" aria-label="...">
                   <div class="btn-group" role="group" aria-label="Save">

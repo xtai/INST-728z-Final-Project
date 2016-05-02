@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UMEI 007 - Re: Pages covered in class...</title>
+    <title>UMEI 007 - Gradebook</title>
 
     <!-- Bootstrap CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
           </div>
           <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log Out</a></li>
             </ul>
             <p class="navbar-text navbar-right">Welcome, <strong>Susan</strong>!</p>
@@ -66,37 +66,84 @@
             <ul class="nav nav-tabs">
               <li role="presentation"><a href="./index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
               <li role="presentation"><a href="./course.html">UMEI 007 - 0101</a></li>
-              <li role="presentation"><a href="./connect.html"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> Conversations</a></li>
-              <li role="presentation" class="active"><a href="#">Sandra essay hw 2 &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './connect.html';"><span aria-hidden="true">&times;</span></button></a></li>
+							<li role="presentation"><a href="./gradebook.html">Gradebook</a></li>
+              <li role="presentation" class="active"><a href="#">Clayton, Michael &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './gradebook.html';"><span aria-hidden="true">&times;</span></button></a></li>
             </ul>
                         <!-- Tab panes -->
             <div class="row right-tab-panel">
-              <div class="col-md-12">
-                <div class="panel panel-default">
-                  <div class="panel-heading panel-heading-message">
-                    <div class="btn-toolbar pull-right" role="toolbar" aria-label="reply or forward this message">
-                      <div class="btn-group" role="group" aria-label="reply this message">
-                        <a href="./connect-compose.html" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-arrow-left"></span> Reply</a>
-                      </div>
-                      <div class="btn-group" role="group" aria-label="forward this message">
-                        <a href="./connect-compose.html" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-arrow-right"></span> Forward</a>
-                      </div>
-                    </div>
-                    <h3 class="panel-title">Sandra essay hw 2</h3>
-                  </div>
-                  <div class="panel-body">
-                    <p class="pull-right">March 19, 11:59 pm</p>
-                    <p>
-                      <strong>From:</strong> <a href="./gradebook-Student-Sandra.html"><img src="./assets/img/sandra.jpg" class="img-circle-small"> Roberts, Sandra</a><br>
-                      <strong>To:</strong> me</p>
-                    <hr>
-                    <p>Professor,</p>
-                    <p>Attached is my essay 2 assignment. Thanks! </p> 
-                    <p>~Sandra</p>
-                  </div>
-                  <div class="panel-footer"><span class="glyphicon glyphicon-paperclip"></span> <a href="#">roberts-essay2.doc</a> </div>
-                </div>
-                
+
+              <table class="table">
+                <tr>
+                  <td rowspan="2"><img class="img-circle" src="./assets/img/michael.jpg"></td>
+                  <td class="main-p-subtitle">You are viewing the grades for <strong>Michael Clayton</strong>.</td>
+                </tr>
+                <tr>
+                  <td>Student in UMEI 007-0101 | <a href="./connect-compose.html">mclayton@coolms.edu</a></td>
+                </tr>
+              </table>
+
+
+
+              <div class="col-xs-12" id="profile">
+                <h4>Overall Grade: <strong>89 (B+)</strong></h4>
+              </div>
+              <div class="col-xs-12">
+                  <table class="table table-bordered table-hover table-striped">
+                  <thead>
+                    <tr>
+                      <th>Assignment </th>
+                      <th>Score</th>
+                      <th>Grade</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">Reading reflection - week 4</td>
+                      <td>92</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Essay 05</td>
+                      <td>88</td>
+                      <td>B+</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Quiz on American history</td>
+                      <td>97</td>
+                      <td>A+</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Assignment 5</td>
+                      <td>94</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Essay 04</td>
+                      <td>84</td>
+                      <td>B</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Reading relection - week 2</td>
+                      <td>78</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Writing test </td>
+                      <td>89</td>
+                      <td>B+</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Class Quiz</td>
+                      <td>94</td>
+                      <td>A+</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Discussion on Culture </td>
+                      <td>88</td>
+                      <td>B+</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>

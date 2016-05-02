@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Susan's Classes</title>
+    <title>CooLMS</title>
 
     <!-- Bootstrap CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
   <body>
     <div class="container">
       <!-- Navbar -->
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -30,13 +30,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./">Susan's Classes</a>
+            <a class="navbar-brand" href="./"><span class="glyphicon glyphicon-sunglasses"></span> CooLMS</a>
           </div>
           <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></a></li>
               <li><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log Out</a></li>
             </ul>
+            <p class="navbar-text navbar-right">Welcome, <strong>Susan</strong>!</p>
           </div>
         </div>
       </nav>
@@ -47,10 +48,10 @@
           <!-- Left Content -->
           <div class="col-md-3">
             <div data-spy="affix" data-offset-top="0" data-offset-bottom="200">
-              <div class="list-group">
+              <div class="list-group left-list-group">
                 <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
               </div>
-              <div class="list-group">
+              <div class="list-group left-list-group">
                 <a href="./course.html" class="list-group-item"><span class="badge">Spring 2016</span>UMEI 007 - 0101</a>
                 <a href="./course-2.html" class="list-group-item"><span class="badge">Spring 2016</span>UMEI 007 - 0201</a>
                 <a href="./course-3.html" class="list-group-item"><span class="badge">Spring 2016</span>UMEI 008 - 0101</a>
@@ -65,71 +66,37 @@
             <ul class="nav nav-tabs">
               <li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
             </ul>
-            <br>
             <!-- Tab panes -->
-            <div class="row">
+            <div class="row right-tab-panel">
               <div class="col-md-12">
                 <h1 class="main-h1-title">Welcome, <strong>Susan</strong>!</h1>
                 <p class="main-p-subtitle">What would you like to do?</p>
-                <br>
               </div>
-              <div class="col-md-6">
-                <p class="main-p-subsubtitle">Recent classes:</p>
-                <a href="./course.html" class="btn btn-default btn-lg btn-block">UMEI 007 - 0101 <span class="badge">Spring 2016</span></a>
-                <a href="./course-2.html" class="btn btn-default btn-lg btn-block">UMEI 007 - 0201 <span class="badge">Spring 2016</span></a>
-                <a href="./course-3.html" class="btn btn-default btn-lg btn-block">UMEI 008 - 0101 <span class="badge">Spring 2016</span></a>
-              </div>
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <p class="main-p-subsubtitle">Recently used features:</p>
-                <a href="./gradebook.html" class="btn btn-info btn-lg btn-block"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Access Gradebook</a>
-                <a href="./connect.html" class="btn btn-warning btn-lg btn-block"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> Connect with Students</a>
-                <a href="material.html" class="btn btn-danger btn-lg btn-block"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Add Course Materials</a>
-                <a href="./calendar.html" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Calendar</a>
-                <a href="./discussion.html" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Discussion Board</a>
-                <button type="button" class="btn btn-default btn-lg btn-block"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span> Other Features</button>
               </div>
-              <div class="col-md-12">
+
+              <div class="col-sm-4">
+                <a href="./gradebook.html" class="btn btn-info btn-lg btn-block"><span class="glyphicon glyphicon-book btn-icon" aria-hidden="true"></span><br>Gradebook</a>
                 <br>
+                <a href="./calendar.html" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-calendar btn-icon" aria-hidden="true"></span><br>Calendar</a>
               </div>
-              <div class="col-md-12">
-                <p class="main-p-subsubtitle">Converstions:</p>
-                <table class="table table-bordered table-hover">
-                  <thead>
-                    <tr>
-                      <th>From</th>
-                      <th>Subject</th>
-                      <th>Date</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-9.html';">
-                      <th scope="row"><span class="label label-danger">NEW</span> Brooks, Ida</th>
-                      <td><strong>Re: Essay 1 Grade</strong></td>
-                      <td><strong>Mar 23</strong></td>
-                      </a>
-                    </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-8.html';">
-                      <th scope="row"><span class="label label-danger">NEW</span> Clayton, Michael</th>
-                      <td><strong>Re: Essay 1 Grade</strong></td>
-                      <td><strong>Mar 22</strong></td>
-                    </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-7.html';">
-                      <td scope="row">Elliot, Isabel</td>
-                      <td>Turning in Essay 2</td>
-                      <td>Mar 21</td>
-                    </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-1.html';">
-                      <td scope="row">Gill, Marco</td>
-                      <td>Re: Pages covered in class...</td>
-                      <td>Mar 21</td>
-                    </tr>
-                    <tr class="main-table-clickable" onclick="window.location.href = './connect-message-6.html';">
-                      <td scope="row">Patton, Kyle</td>
-                      <td>Question about essay 2</td>
-                      <td>Mar 19</td>
-                    </tr>
-                  </tbody>
-                </table>
+                
+              <div class="col-sm-4">
+                <a href="./connect.html" class="btn btn-warning btn-lg btn-block"><span class="glyphicon glyphicon-comment btn-icon" aria-hidden="true"></span><br>Messages</a>
+                <br>
+                <a href="./roster.html" class="btn btn-default btn-lg btn-block"><span class="glyphicon glyphicon-user btn-icon" aria-hidden="true"></span><br>Class Roster</a>
+              </div>
+
+              <div class="col-sm-4">
+                <a href="material.html" class="btn btn-danger btn-lg btn-block"><span class="glyphicon glyphicon-paperclip btn-icon" aria-hidden="true"></span><br>Course Materials</a>
+                <br>
+                <a href="./discussion.html" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-bullhorn btn-icon" aria-hidden="true"></span><br>Discussion Board</a>
+              </div>
+
+              <div class="col-sm-12">
+                <br>
+                <button type="button" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span> Other Features</button>
               </div>
             </div>
           </div>
@@ -140,7 +107,7 @@
       <footer>
         <center>
           <hr>
-          <p>INST 728z - Spring 2016<br><a href="https://jennyhottle.com/" target="_blank">Jenny Hottle</a>, <a href="http://www.boneyeldho.com/" target="_blank">Boney Yeldho</a>, and <a href="http://taixiaoyu.com/" target="_blank">Xiaoyu Tai</a><br></p>
+          <p><span title="Inclusive Technology Design, iSchool, University of Maryland">INST 728z - Spring 2016</span> - <a href="https://github.com/xtai/INST-728z-Final-Project" target="_blank">Fork me on GitHub</a><br><a href="https://jennyhottle.com/" target="_blank">Jenny Hottle</a>, <a href="http://www.boneyeldho.com/" target="_blank">Boney Yeldho</a>, and <a href="http://taixiaoyu.com/" target="_blank">Xiaoyu Tai</a><br><br></p>
         </center>
       </footer>
       <!-- /Footer -->
