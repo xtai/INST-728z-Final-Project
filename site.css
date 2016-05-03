@@ -183,10 +183,21 @@ ul.nav-tabs {
 
 .img-circle-small {
     border-radius: 50%;
-    max-width: 30px;
+    max-width: 35px;
     border: 2px solid #ecf0f1;
+	-webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+.transition {
+    -webkit-transform: scale(3); 
+    -moz-transform: scale(3);
+    -o-transform: scale(3);
+    transform: scale(3);
 }
 
-.img-circle-small:hover {
+
+/*.img-circle-small:hover {
     max-width: 75px;
-}
+}*/
