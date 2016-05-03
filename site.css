@@ -141,6 +141,7 @@ ul.nav-tabs {
     min-width: 80px;
 }
 
+
 /* Input Button */
 .btn-file {
     position: relative;
@@ -206,3 +207,7 @@ ul.nav-tabs {
 /*.img-circle-small:hover {
     max-width: 75px;
 }*/
+
+.table-links{
+    text-decoration: none !important;
+}
