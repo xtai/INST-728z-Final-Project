@@ -141,6 +141,7 @@ ul.nav-tabs {
     min-width: 80px;
 }
 
+
 /* Input Button */
 .btn-file {
     position: relative;
@@ -185,10 +186,16 @@ ul.nav-tabs {
     border-radius: 50%;
     max-width: 35px;
     border: 2px solid #ecf0f1;
-	-webkit-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
+}
+.transition {
+    -webkit-transform: scale(4); 
+    -moz-transform: scale(4);
+    -o-transform: scale(4);
+    transform: scale(4);
 }
 .transition {
     -webkit-transform: scale(3); 
@@ -197,7 +204,10 @@ ul.nav-tabs {
     transform: scale(3);
 }
 
-
 /*.img-circle-small:hover {
     max-width: 75px;
 }*/
+
+.table-links{
+    text-decoration: none !important;
+}
