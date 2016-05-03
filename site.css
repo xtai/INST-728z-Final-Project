@@ -183,17 +183,9 @@ ul.nav-tabs {
 
 .img-circle-small {
     border-radius: 50%;
-<<<<<<< Updated upstream
     max-width: 35px;
     border: 2px solid #ecf0f1;
-	-webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-=======
-    max-width: 40px;
-    border: 2px solid #ecf0f1;
-	  -webkit-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
@@ -203,7 +195,6 @@ ul.nav-tabs {
     -moz-transform: scale(4);
     -o-transform: scale(4);
     transform: scale(4);
->>>>>>> Stashed changes
 }
 .transition {
     -webkit-transform: scale(3); 
@@ -211,7 +202,6 @@ ul.nav-tabs {
     -o-transform: scale(3);
     transform: scale(3);
 }
-
 
 /*.img-circle-small:hover {
     max-width: 75px;
