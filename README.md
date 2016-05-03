@@ -13,33 +13,54 @@
     - `gradebook-edit-confirm-1.html`
 
 
-## Site Hierarchy
+## Site Structure
 
 ```
 index.html (Dashboard aka Home)
-|-- course.html (UMEI 007 - 0101)
-|   |-- calendar.html (Under Construction)
-|   |-- connect.html (Conversations)
-|   |   |-- connect-compose.html (Compose new message)
-|   |   |-- connect-message-1.html (Message 1)
-|   |   |-- connect-message-2.html
-|   |   |-- connect-message-3.html
-|   |   |-- connect-message-4.html
-|   |   |-- connect-message-5.html
-|   |   |-- connect-message-6.html
-|   |   |-- connect-message-7.html
-|   |   |-- connect-message-8.html
-|   |   \-- connect-message-9.html
-|   |-- discussion.html (Under Construction)
-|   |-- gradebook.html
-|   \-- material.html (Course Materials)
-|       |-- material-add.html (Add a new file - pt.1)
-|       |-- material-added.html (Add a new file - pt.2)
-|       |-- material-file-1.html (View File 1)
-|       \-- material-send.html (Send File - Compose New Message with attachment)
-|-- course-2.html (UMEI 007 - 0201)
-|-- course-3.html (UMEI 008 - 0101)
-\-- previous-course.html (Under Construction)
+|-- course-2.html           (UMEI 007 - 0201)
+|-- course-3.html           (UMEI 008 - 0101)
+|-- previous-course.html    (Under Construction)
+\-- course.html             (UMEI 007 - 0101)
+    |-- calendar.html       (Under Construction)
+    |-- discussion.html     (Under Construction)
+    |-- roster.html         (Under Construction)
+    |-- connect.html        (Conversations)
+    |   |-- connect-compose.html   (Compose new message)
+    |   |-- connect-message-1.html (Message 1)
+    |   |-- connect-message-2.html
+    |   |-- connect-message-3.html
+    |   |-- connect-message-4.html
+    |   |-- connect-message-5.html
+    |   |-- connect-message-6.html
+    |   |-- connect-message-7.html
+    |   |-- connect-message-8.html
+    |   \-- connect-message-9.html
+    |-- gradebook.html      (Gradebook)
+    |   |-- gradebook-add.html
+    |   |-- gradebook-Student-Felipe.html
+    |   |-- gradebook-Student-Gill.html
+    |   |-- gradebook-Student-Ida.html
+    |   |-- gradebook-Student-Isabel.html
+    |   |-- gradebook-Student-Kyle.html
+    |   |-- gradebook-Student-Lauren.html
+    |   |-- gradebook-Student-Michael.html
+    |   |-- gradebook-Student-Sandra.html
+    |   \-- gradebook-Student-Tina.html
+    \-- material.html       (Course Materials)
+        |-- material-add.html    (Add a new file - pt.1)
+        |-- material-added.html  (Add a new file - pt.2)
+        |-- material-file-1.html (View File 1)
+        |-- material-file-2.html
+        |-- material-file-3.html
+        |-- material-file-4.html
+        |-- material-file-5.html
+        |-- material-file-6.html
+        |-- material-send-1.html (Send this file as attachment)
+        |-- material-send-2.html
+        |-- material-send-3.html
+        |-- material-send-4.html
+        |-- material-send-5.html
+        \-- material-send-6.html
 ```
 
 
