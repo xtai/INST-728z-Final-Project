@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UMEI 007 - Class Roster</title>
+    <title>UMEI 007 - Gradebook</title>
 
     <!-- Bootstrap CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
           </div>
           <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log Out</a></li>
             </ul>
             <p class="navbar-text navbar-right">Welcome, <strong>Susan</strong>!</p>
@@ -66,16 +66,65 @@
             <ul class="nav nav-tabs">
               <li role="presentation"> <a href="./index.html"><span class="glyphicon glyphicon-home" aria-hidden="true" aria-label="Home"></span></a></li>
               <li role="presentation"><a href="./course.html">UMEI 007 - 0101</a></li>
-              <li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Class Roster &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './course.html';"><span aria-hidden="true">&times;</span></button></a></li>
+              <li role="presentation" class="active"><a href="#">Class Roster &nbsp;<button type="button" class="close" aria-label="Close" onclick="window.location.href = './course.html';"><span aria-hidden="true">&times;</span></button></a></li>
             </ul>
                         <!-- Tab panes -->
             <div class="row right-tab-panel">
               <div class="col-md-12">
-                <center>
-                  <br>
-                  <img src="./assets/img/unicorn.jpg" alt="Unicorn cartoon; Calendar is under construction" class="img-rounded">
-                  <p class="main-p-subtitle">Class Roster is under construction</p>
-                </center>
+                <p class="main-p-subtitle">You are viewing the Class Roster for <strong>UMEI 007-0101</strong>.</p>
+                <a href="./gradebook.html" class="btn-spacer btn btn-info">View Gradebook</a>
+                <a href="./connect.html" class="btn-spacer btn btn-success">Message Students</a>
+                <hr>
+              </div>
+              <div class="col-md-12">
+								<p class="help-block">Click on a student's name to view his or her profile.</p>
+								<br>
+                  <table class="table table-bordered table-hover table-striped">
+                  <thead>
+                    <tr>
+                      <th>Student Name </th>
+                      <th>Email Address</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="main-table-clickable" onclick="window.location.href = './gradebook-Student-Ida.html';">
+                      <td scope="row"><img src="./assets/img/ida.jpg" class="img-circle-small"> Brooks, Ida</td>
+                      <td>ibrooks@coolms.edu</td>
+                    </tr>
+                    <tr class="main-table-clickable" onclick="window.location.href = './gradebook-Student-Michael.html';">
+                      <td scope="row"><img src="./assets/img/michael.jpg" class="img-circle-small"> Clayton, Michael</td>
+                      <td>mclayton@coolms.edu</td>
+                    </tr>
+                    <tr class="main-table-clickable" onclick="window.location.href = './gradebook-Student-Isabel.html';">
+                      <td scope="row"><img src="./assets/img/isabel.jpg" class="img-circle-small"> Elliot, Isabel</td>
+                      <td>ielliot@coolms.edu</td>
+                    </tr>
+                    <tr class="main-table-clickable" onclick="window.location.href = './gradebook-Student-Gill.html';">
+                      <td scope="row"><img src="./assets/img/gill.jpg" class="img-circle-small"> Gill, Marco</td>
+                      <td>gmarco@coolms.edu</td>
+                    </tr>
+                    <tr class="main-table-clickable" onclick="window.location.href = './gradebook-Student-Kyle.html';">
+                      <td scope="row"><img src="./assets/img/kyle.jpg" class="img-circle-small"> Patton, Kyle</td>
+                      <td>kpatton@coolms.edu</td>
+                    </tr>
+                    <tr class="main-table-clickable" onclick="window.location.href = './gradebook-Student-Sandra.html';">
+                      <td scope="row"><img src="./assets/img/sandra.jpg" class="img-circle-small"> Roberts, Sandra</td>
+                      <td>sroberts@coolms.edu</td>
+                    </tr>
+                    <tr class="main-table-clickable" onclick="window.location.href = './gradebook-Student-Felipe.html';">
+                      <td scope="row"><img src="./assets/img/felipe.jpg" class="img-circle-small"> West, Felipe</td>
+                      <td>fwest@coolms.edu</td>
+                    </tr>
+                    <tr class="main-table-clickable" onclick="window.location.href = './gradebook-Student-Tina.html';">
+                      <td scope="row"><img src="./assets/img/tina.jpg" class="img-circle-small"> Wu, Tina</td>
+                      <td>twu@coolms.edu</td>
+                    </tr>
+                    <tr class="main-table-clickable" onclick="window.location.href = './gradebook-Student-Lauren.html';">
+                      <td scope="row"><img src="./assets/img/lauren.jpg" class="img-circle-small"> Yetz, Lauren</td>
+                      <td>lyetz@coolms.edu</td>
+                    </tr>
+                  </tbody>
+								</table>
               </div>
             </div>
           </div>
@@ -95,5 +144,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./assets/js/bootstrap.min.js"></script>
+		<script>
+  $(document).ready(function(){
+    $('.img-circle-small').hover(function() {
+        $(this).addClass('transition');
+ 
+    }, function() {
+        $(this).removeClass('transition');
+    });
+  });
+</script>
   </body>
 </html>
